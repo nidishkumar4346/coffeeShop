@@ -1,0 +1,1070 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+    /* border: 1px solid black; */
+}
+
+:root {
+    --primaryColor: #be9c79;
+    --secondaryColor: #666666;
+    --tertiaryColor: #333333;
+    --darkColor: #000000;
+    --lightColor: #ffffff;
+    --regularFont: 1.6rem;
+    --headingFont: 2.5rem;
+    --ffPrimary: "Nunito", sans-serif;
+    --ffSecondary: "Merienda", cursive;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: var(--ffPrimary);
+    color: var(--darkColor);
+    font-size: var(--regularFont);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-optical-sizing: auto;
+    /* border: 1px solid black; */
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background-color: var(--primaryColor);
+    font-family: var(--ffPrimary);
+    color: var(--lightColor);
+    font-size: var(--regularFont);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 0rem;
+    padding: 1.5rem 3rem;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--darkColor);
+    color: var(--lightColor);
+    transition: background-color 0.2s ease;
+}
+
+/* :::::SCROLL BAR CODE S T A R T S::::: */
+
+/* Width and height of the scrollbar */
+::-webkit-scrollbar {
+    width: 1.5rem;
+    /* Vertical scrollbar */
+    height: 10px;
+    /* Horizontal scrollbar */
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #e3e4e6;
+    border-radius: 5px;
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #cececf;
+    /* border-radius: 5px; */
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b9b9ba;
+}
+
+/* :::::SCROLL BAR CODE E N D S::::: */
+
+
+.componentSpacing {
+    padding: 3rem 0rem;
+    /* Breathing Space Between Components */
+}
+
+.screenSize {
+    max-width: 1200px;
+    /* Device Screen Size */
+    margin: auto;
+    /* Left and right Center */
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.dflex {
+    display: flex;
+    /* without this wont work */
+    align-items: center;
+    /* top & bottom Alignment */
+    justify-content: center;
+    /* left & right Alignment */
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    /* makes top to bottom align */
+    align-items: center;
+    /* Behaves like a justify-content */
+    justify-content: center;
+    /* Behaves like a align-items */
+    text-align: center;
+}
+
+/* project standard classes Ends */
+
+/* :::PARENT CONTAINER Code Starts here::: */
+
+header {
+    /* background-color: #13c6bd; */
+    width: 100%;
+    /* Full Screensize */
+    height: auto;
+    /* content Height */
+}
+
+main {
+    /* background-color: #ffbf00; */
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    /* background-color: #89f357; */
+    width: 100%;
+    height: auto;
+}
+
+/* :::PARENT CONTAINER Code Ends here::: */
+
+/* :::HEADER Code Starts hereE::: */
+/* Navbar code */
+.navBar {
+    padding: 2.6rem 0rem;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0.125rem 0.3rem rgb(0,0, 0, 0.075);
+    border-radius: 0.5rem;
+}
+
+.navBarBoxOne figure img {
+    width: auto;
+    height: 5rem;
+    margin-left: 6.5rem;
+}
+
+.navBarBoxTwo {
+    width: 98%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+}
+
+.links a {
+    font-family: var(--ffPrimary);
+    color: #343a40;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 2rem;
+}
+
+.hamburgerIcon{
+    display: none;
+}
+
+.navBarBoxTwo #iconToggle{
+    display: none;
+}
+
+/* Navbar code */
+
+/* Hero Section code */
+.heroSection {
+    background: linear-gradient(90deg, white, transparent 70%), url(./asset/image/home-bg.jpg);
+    padding: 28.4rem 0rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heroSectionBlock {
+    height: 100%;
+}
+
+.heroSectionBox {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.heroSectionBox h1 {
+    font-family: var(--ffSecondary);
+    font-size: 5rem;
+    font-weight: 900;
+    color: #212529;
+    margin-bottom: 1rem;
+}
+
+.heroSectionBox p {
+    font-family: var(--ffPrimary);
+    text-align: center;
+    color: #212529;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.heroSectionBox button {
+    background-color: var(--primaryColor);
+    font-family: var(--ffPrimary);
+    color: var(--lightColor);
+    font-size: 2rem;
+}
+
+button:hover {
+    background-color: var(--darkColor);
+    color: var(--lightColor);
+    transition: background-color 0.2s ease;
+}
+
+
+/* Hero Section code */
+/* :::HEADER Code Ends here::: */
+
+/* :::MAIN Code Starts here::: */
+/* Our Menu code */
+
+/* component */
+.menu {
+    /*background-color:#eff2f7;*/
+    padding: 0rem 3rem;
+}
+
+.menuBoxTwo h2 {
+    font-family: var(--ffSecondary);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--dark-color);
+    margin: 1.0rem 0rem;
+}
+
+.menuBoxTwo p {
+    font-family: var(--ffPrimary);
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 1.7rem;
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+    line-height: 1.5rem;
+    /* margin-bottom: 2rem; */
+}
+
+.menuBoxTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+}
+
+.menuBoxTwo button {
+    /*background-color:rgb(118,240,240)*/
+    font-family: var(--ffprimary);
+    background-color: #be9c79;
+    color: var(--light-color);
+    font-size: 2.5rem;
+    border-radius: 0rem;
+    border: none;
+    padding: 1rem 2rem;
+}
+
+.menuBoxTwo button:hover {
+    background-color: #212529;
+    color: var(--light-color);
+    transition: background-color 0.2s ease;
+}
+
+/* Our Menu code */
+
+/* Facility code */
+/* rowOne */
+.facilityBodyOne {
+    /*background-color:crimson;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.facilityBox h2 {
+    /* background-color:#ac14c0;  */
+    font-family: var(--ffSecondary);
+    font-size: 3.9rem;
+    font-weight: 800;
+    color: var(--dark-color);
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.facilityBox figure img {
+    /* background-color:rgb(95, 39, 51) */
+    width: auto;
+    height: 4.3rem;
+    margin-left: 4rem;
+}
+
+.facilityBodyTwo {
+    /* background-color:rgb(41, 21, 25) */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0rem 2rem;
+    column-gap: 1rem;
+}
+
+.facilityBoxOne {
+    /* background-color:rgb(94, 62, 68) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.facilityBoxOne h3 {
+    /* background-color:rgb(247, 229, 233) */
+    font-family: var(--ffPrimary);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-top: 1rem;
+
+}
+
+.facilityBoxOne p {
+    font-family: var(--ffPrimary);
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 300;
+    color: var(--dark-color);
+    margin-top: 0.9rem;
+}
+
+.facilityCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+section,div{
+    scroll-margin-top: 11rem;
+}
+
+/* Facility code */
+
+/* Popular code */
+.popularMenu {
+    /* background-color:#234683; */
+    padding: 0rem 3rem;
+}
+
+.popularMenuContainer {
+    /* background-color: rgb(23, 39, 212)  */
+    max-width: 1020px;
+    margin: auto;
+}
+
+.popularMenuBodyOne {
+    /*background-color:crimson;*/
+    display: grid;
+    grid-template-columns: 1fr;
+    /* padding: 0rem 2rem; */
+}
+
+.popularMenuBoxOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popularMenuBox h2 {
+    font-family: var(--ffSecondary);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--dark-color);
+    margin-bottom: 3rem;
+}
+
+.popularMenuBox Figure img {
+    /*background-color:chartreuse*/
+    width: auto;
+    height: 4rem;
+    margin-left: 6rem;
+}
+
+.popularMenuBodyTwo {
+    /*background-color:crimson;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0rem 2rem;
+    margin-bottom: 4rem;
+}
+
+.PopularMenuBoxOne figure img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.PopularMenuBoxOne h3 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popular code */
+
+/* Gallery code */
+.gallery {
+    /* background-color:#434955; */
+    padding: 0rem 3rem;
+}
+
+.galleryBodyOne {
+    /* background-color: crimson; */
+    display: flex;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+
+.galleryBoxOne figure img {
+    width: auto;
+    height: 4.1rem;
+    margin-top: 2rem;
+}
+
+.galleryBoxOne {
+    /* background-color: #0f1216; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.galleryBoxOne h2 {
+    font-family: var(--ffSecondary);
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.galleryBodyTwo {
+    /* background-color: crimson; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0rem 2rem;
+    margin-bottom: 5rem;
+}
+
+/* Gallery code */
+
+/* Team code */
+.teamContainer {
+    /* background-color: rgb(23, 39, 212)  */
+    max-width: 1020px;
+    margin: auto;
+}
+
+.teamBodyOne {
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.teamBox h2 {
+    font-family: var(--ffSecondary);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--dark-color);
+    margin-bottom: 3rem;
+}
+
+.teamBox figure img {
+    /* background-color: rgb(19, 26, 109) */
+    width: auto;
+    height: 4rem;
+    margin-left: 1rem;
+}
+
+.teamBodyTwo {
+    /*background-color:crimson;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 0rem 2rem;
+}
+
+.teamBoxOne {
+    /* background-color: rgb(37, 40, 71) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamBoxOne h3 {
+    /* background-color: rgb(22, 24, 43) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #212529;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.teamBoxTwo h3 {
+    /* background-color: rgb(40, 45, 97) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #212529;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.teamBlockThree {
+    --secondary-color: #666666;
+}
+
+.teamBoxThree h3 {
+    /* background-color: rgb(45, 16, 53) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #212529;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.teamBlockFour {
+    --secondary-color: #666666;
+}
+
+.teamBoxFour h3 {
+    /* background-color: rgb(85, 11, 114) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #212529;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.teamBlockFive {
+    --secondary-color: #666666;
+}
+
+.teamBoxFive h3 {
+    /* background-color: rgb(33, 143, 92) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #212529;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.teamBlockSix {
+    --secondary-color: #666666;
+}
+
+.teamBoxSix h3 {
+    /* background-color: rgb(114, 72, 108) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #212529;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+/* Team code */
+/* :::MAIN Code Ends here::: */
+
+/* :::FOOTER Code Starts here::: */
+/* Contact code */
+.contact {
+    background-color: white;
+    padding: 3rem 0rem;
+}
+
+.contactContainer {
+    /* background-color: #e91818; */
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contactBox {
+    /* background-color: #c8ff00; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactBox figure img {
+    /* background-color: #0fdc2e; */
+    width: auto;
+    height: 4rem;
+}
+
+.contactBox h2 {
+    /* background-color: #864646; */
+    font-family: var(--ffSecondary);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--dark-color);
+}
+
+.contactBoxOne figure img {
+    /* background-color: #0fdc2e; */
+    width: 100%;
+    aspect-ratio: 1/1.4;
+}
+
+/* Step5: column */
+.contactBlockTwo {
+    /* background-color: #0fdc2e; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Step6: subColumn */
+.contactBoxTwo {
+    /* background-color: #c8ff00; */
+    width: 100%;
+}
+
+.bookATable {
+    border: 1px solid black;
+    text-align: center;
+    padding: 3rem 0rem;
+}
+
+.bookATable h3 {
+    font-family: var(--ffPrimary);
+    font-size: 4rem;
+    color: #212529;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.formGroup {
+    padding: 1.5rem 0rem;
+}
+
+.formGroup input {
+    padding: 0.5rem 1rem;
+}
+
+.formGroup input[placeholder] {
+    font-family: var(--ffPrimary);
+    font-size: 3rem;
+    color: #212529;
+    font-weight: 300;
+    /* text-align: left; */
+    width: 90%;
+    border: 1px solid black;
+}
+
+.formGroup input:focus {
+    outline: none;
+    outline-color: #80BDFF;
+    border-color: #80BDFF;
+    box-shadow: 0 0 0 4px rgb(128, 189, 255, 0.5);
+}
+
+form button {
+    /*background-color:rgb(118,240,240)*/
+    font-family: var(--ffprimary);
+    background-color: #be9c79;
+    color: var(--light-color);
+    font-size: 1.8rem;
+    border-radius: 0rem;
+    border: none;
+    padding: 1.5rem 3rem;
+    margin-top: 1rem;
+}
+
+form button:hover {
+    background-color: #03101d;
+    color: var(--light-color);
+    transition: background-color 0.2s ease;
+}
+
+
+/* Contact code */
+
+/* Contact Icons code */
+.contactIconBoxOne {
+    /* background-color:gold; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    color: #212529;
+}
+
+.contactIconBoxOne h3 {
+    /*background-color:rgb(231,252,44);*/
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+.contactIconBoxOne p {
+    /*background-color:rgb(231,252,44);*/
+    font-size: 2rem;
+}
+
+.contactIconCardMain p {
+    font-size: 2rem;
+}
+
+.contactIconBoxTwo {
+    /*background-color:gold;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    color: #212529;
+}
+
+.contactIconBoxTwo h3 {
+    /*background-color:rgb(231,252,44);*/
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+.contactIconBoxTwo p {
+    /*background-color:rgb(231,252,44);*/
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.contactIconBoxThree {
+    /*background-color:gold;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    color: #212529;
+}
+
+.contactIconBoxThree h3 {
+    /*background-color:rgb(231,252,44);*/
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+.contactIconBoxThree p {
+    /*background-color:rgb(231,252,44);*/
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.contactIconBoxFour {
+    /*background-color:gold;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    color: #212529;
+}
+
+.contactIconBoxFour h3 {
+    /*background-color:rgb(231,252,44);*/
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+.contactIconBoxFour p {
+    /*background-color:rgb(231,252,44);*/
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.contactIconBodyTwo {
+    /*background-color:crimson*/
+    border-top: 2px solid #212529;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactIconBoxOne p {
+    /* background-color:rgb(41, 38, 22); */
+    margin-top: 1rem;
+    color: #212529;
+}
+
+.contactIconBoxOne i {
+    background-color: #BE9C79;
+    font-size: 4rem;
+    border-radius: 70%;
+    padding: 12px;
+    height: 70px;
+    width: 70px;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.contactIconBoxOne p span {
+    color: #BE9C79;
+}
+
+.contactIconBoxTwo i {
+    background-color: #BE9C79;
+    font-size: 4rem;
+    border-radius: 70%;
+    padding: 12px;
+    height: 70px;
+    width: 70px;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.contactIconBoxThree i {
+    background-color: #BE9C79;
+    font-size: 4rem;
+    border-radius: 70%;
+    padding: 12px;
+    height: 70px;
+    width: 70px;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.contactIconBoxFour i {
+    background-color: #BE9C79;
+    font-size: 4rem;
+    border-radius: 70%;
+    padding: 12px;
+    height: 70px;
+    width: 70px;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* Contact Icons code */
+/* :::FOOTER Code Ends here::: */
+
+
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+
+/* for Responsive Target the ROW Code (display:grid) */
+
+/* Small devices (landscape phones, upto 576px and below) */
+/* @media (width <=576px) */
+@media (max-width: 576px) {
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .teamBodyTwo,
+    .galleryBodyTwo,
+    .popularMenuBodyTwo,
+    .facilityBodyTwo {
+        grid-template-columns: 1fr;
+        padding: 0rem 1rem;
+    }
+
+    /* navBar */
+
+    .navBarBlockTwo .hamburgerIcon{
+        display: block;
+        position: absolute;
+        top: 3rem;
+        right: 4rem;
+        cursor: pointer;
+    }
+    
+    .links{
+        display: none;
+        flex-direction: column;
+    }
+
+    .navBarBoxTwo{
+        justify-content: end;
+    }
+
+    .navBarBoxTwo .links li a{
+        padding: 1rem 0rem;
+        display: flex;
+    }
+
+    #iconToggle:checked~.links{
+        display: flex;
+    }
+
+    #iconToggle:checked~.links li:hover a{
+        color: #000000;
+        font-weight: 500;
+    }
+
+    /* herosection */
+    .heroSectionBox h1 {
+        font-size: 3rem;
+        margin-left: 5rem;
+    }
+
+    .heroSectionBox p {
+        font-size: 1.5rem;
+        margin-left: 5rem;
+    }
+
+    .heroSectionBox button {
+        margin-left: 7rem;
+    }
+
+    /* menu */
+    .menuBoxTwo h2 {
+        font-size: 4rem;
+    }
+
+    /* popularmenu */
+    .popularMenuBox h2 {
+        font-size: 4.5rem;
+    }
+
+    .popularMenuBox figure img{
+        /* margin-right: 10rem; */
+    }
+
+    .popularMenuBodyTwo {
+        text-align: center;
+    }
+    .teamBoxOne figure img{
+        padding: 0rem 8.5rem;
+    }
+}
+
+/* Medium devices (tablets, upto 768px and above) */
+/* @media (width >=577px) and (width <=768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    /* write code here */
+}
+
+/* Large devices (Laptops, upto 992px and above) */
+/* @media (width >=769px) and (width <=992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    /* write code here */
+}
+
+/* X-Large devices (large desktops, upto 1200px and above) */
+/* @media (width >=993px) and (width <=1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    /* write code here */
+}
+
+/* XX-Large devices (larger desktops, upto 1400px and above) */
+/* @media (width >=1200px) */
+@media (min-width: 1201px) {
+    /* write code here */
+}

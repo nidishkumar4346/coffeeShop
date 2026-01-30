@@ -1,0 +1,141 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-wrap: pretty;
+    /*border:1px solid red;*/
+}
+
+html{
+    font-size: 62.5;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    /*background-color:#eff2f7;*/
+    /* font-family:merinda,serif; */
+    font-family: nunito sans-serif;
+    color: #666666;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    /*webkit-font-smoothing:anitiliation;*/
+    /*font-optical-sizing:auto;*/
+}
+
+:root{
+    --primary-color:#e29c79;
+    --secondary-color:#666666;
+    --dark-color:#212529;
+    --light-color:#ffffff;
+    --regular-font:1.6rem;
+    --heading-font:2.5rem;
+    --ffprimary:"Nunito", sans-serif;
+    --ffsecondary:"Merienda", cursive;
+}
+
+input,
+textarea,
+button{
+    font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg
+{
+    display: block;
+    max-width: 100%;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none ;
+    color:inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+button,
+span{
+    /* background-color: #0eb8ce; */
+    font-family: var(--ffprimary);
+    color: var(--darkcolor);
+    font-size: var(--regularfont);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+}
+
+h1{
+    /* background-color: #0eb8ce; */
+    font-family: var(--secondary);
+    color: var(--tertiarycolor);
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+}
+
+h2{
+    /* background-color: #0eb8ce; */
+    font-family: var(--ffsecondary);
+    color:var(--tertiarycolor);
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+}
+
+fixed img{
+    width: auto;
+    height: 4.5rem;
+}
+responsivei img{
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+
+.backgroundimage{
+    background-color: var(--primaryColor);
+    background-image: url(./asset/image/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* button{
+    background-color: var(--primaryColor);
+    font-family: var(--ffprimary);
+    color:var(lightcolor);
+    font-size: var(--regularfont);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    transition: background-color 0.2s ease;
+}
+
+button:hover{
+    background-color: var(--darkcolor);
+    color: var(lightcolor);
+    transition: background-color 0.2s ease;
+} */

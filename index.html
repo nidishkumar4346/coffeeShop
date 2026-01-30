@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- googleFontLink -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- fontLink-2     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- title -->
+    <title>Coffee shop website using bootstrap</title>
+    <!-- favIcon -->
+    <link rel="shortcut icon" href="./asset/image/logo.png" type="image/x-icon">
+    <!-- styleCss -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./newstyle.css">
+    <!-- fontAwesomeIcon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header> <!-- 1.parentcontainer -->
+        <nav class="navBar"> <!-- 2.component -->
+            <div class="navBarContainer screenSize"> <!-- 3.componentContainer -->
+                <div class="navBarBody grid-2"> <!-- 4.row -->
+                    <div class="navBarBlockOne"> <!-- 5.columnOne -->
+                        <div class="navBarBoxOne"> <!-- 6.subColumnOne -->
+                            <figure><img src="./asset/image/logo.png" alt="logo"></figure>
+                        </div>
+                    </div>
+                    <div class="navBarBlockTwo"> <!-- columnTwo -->
+                        <div class="navBarBoxTwo"> <!-- subcolumnTwo -->
+                            <input type="checkbox" id="iconToggle">
+                            <label for="iconToggle" class="hamburgerIcon">
+                                <i class="fa-solid fa-bars"></i>
+                            </label>
+                            <ul class="links">
+                                <li><a href="#Home">Home</a></li>
+                                <li><a href="#About">About</a></li>
+                                <li><a href="#Menu">Menu</a></li>
+                                <li><a href="#Gallery">Gallery</a></li>
+                                <li><a href="#Team">Team</a></li>
+                                <li><a href="#Contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="heroSection" id="Home"> <!-- 2.component -->
+            <div class="heroSectionContainer"> <!-- 3.componentContainer -->
+                <div class="heroSectionBody"> <!-- 4.row -->
+                    <div class="heroSectionBlock"> <!-- 5.column -->
+                        <div class="heroSectionBox"> <!-- 6.subColumn -->
+                            <h1>Coffee Heaven</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci ipsa id vero
+                                perferendis, reiciendis dolores!</p>
+                            <button>About us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main> <!-- parentcontainer -->
+        <section class="menu" id="About"> <!-- 2.component -->
+            <div class="menuContainer screenSize "> <!--3.componentContainer -->
+                <div class="menuBody grid-2"> <!-- 4.row -->
+                    <div class="menuBlockOne"> <!-- 5.columnOne -->
+                        <div class="menuBoxOne"> <!-- 6.subColumnOne -->
+                            <figure><img src="./asset/image/about-img.jpg" alt="menu"></figure>
+                        </div>
+                    </div>
+                    <div class="menuBlockTwo"> <!-- columnTwo -->
+                        <div class="menuBoxTwo"> <!-- subColumnTwo -->
+                            <h2>A Cup Of Coffee Can Complete Your Day</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, esse corrupti.
+                                Incidunt fuga sit numquam est consequatur provident ipsa quidem! Lorem</p>
+                            <button>Our Menu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faciliy componentSpacing"> <!-- 2.component -->
+            <div class="facilityContainer screenSize "> <!--3.componetContainer -->
+                <div class="facilityBodyOne"> <!-- rowOne -->
+                    <div class="facilityBlock"> <!-- 5.columnOne -->
+                        <div class="facilityBox"> <!-- 6.subcolumnOne -->
+                            <figure><img src="asset/image/heading-img.jpg" alt="heading"></figure>
+                            <h2>Our Facility</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="facilityBodyTwo"> <!-- rowTwo -->
+                    <div class="facilityBlockOne"> <!-- columnOne -->
+                        <div class="facilityBoxOne"> <!-- subColumnOne -->
+                            <div class="facilityCard">
+                                <figure class="facilityCardHeader"><img src="asset/image/icon-1.png" alt="icon">
+                                </figure>
+                                <div class="facilityCardMain">
+                                    <h3>Varieties Of Coffee</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="facilityBlockTwo"> <!-- ColunmTwo -->
+                        <div class="facilityBoxOne"> <!-- subColumnTwo -->
+                            <div class="facilityCard">
+                                <figure class="facilityCardHeader"><img src="asset/image/icon-2.png" alt="icon">
+                                </figure>
+                                <div class="facilityCardMain">
+                                    <h3>Coffee Beans</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="facilityBlockThree"> <!-- columnThree -->
+                        <div class="facilityBoxOne"> <!-- subColumnThree -->
+                            <div class="facilityCard">
+                                <figure class="facilityCardHeader"><img src="asset/image/icon-3.png" alt="icon">
+                                </figure>
+                                <div class="facilityCardMain">
+                                    <h3>Breakfast And Sweets</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faclityBlockfour"> <!-- columnFour -->
+                        <div class="facilityBoxOne"> <!-- subColumnFour -->
+                            <div class="facilityCard">
+                                <figure class="facilityCardHeader"><img src="asset/image/icon-4.png" alt="icon">
+                                </figure>
+                                <div class="facilityCardMain">
+                                    <h3>Ready To Go Coffee</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popularMenu" id="Menu"> <!-- 2.component -->
+            <div class="popularMenuContainer"> <!-- 3.componentContainer -->
+                <div class="popularMenuBodyOne"> <!-- rowOne -->
+                    <div class="popularMenuBlockOne dflex"> <!-- 5.columnOne -->
+                        <div class="popularMenuBox"> <!-- 6.subColumn -->
+                            <figure><img src="asset/image/heading-img.jpg" alt="heading"></figure>
+                            <h2>Popular Menu</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="popularMenuBodyTwo"> <!-- rwoTwo -->
+                    <div class="popularMenuBlockOne"> <!-- columnOne -->
+                        <div class="PopularMenuBoxOne"> <!-- subColumnOne -->
+                            <figure><img src="asset/image/menu-1.png" alt="menu-1"></figure>
+                            <h3>Love You Coffee</h3>
+                        </div>
+                    </div>
+                    <div class="popularMenuBLockTwo"> <!-- columnTwo -->
+                        <div class="PopularMenuBoxOne"> <!-- subColumnTwo -->
+                            <figure><img src="asset/image/menu-2.png" alt="menu-2"></figure>
+                            <h3>Cappuccino</h3>
+                        </div>
+                    </div>
+                    <div class="popularMenuBlockThree"> <!-- columnThree -->
+                        <div class="PopularMenuBoxOne"> <!-- subColumnThree -->
+                            <figure><img src="asset/image/menu-3.png" alt="menu-3"></figure>
+                            <h3>Mocha Coffee</h3>
+                        </div>
+                    </div>
+                    <div class="popularMenuBlockOne"> <!-- columnFour -->
+                        <div class="PopularMenuBoxOne"> <!-- subColumnFour -->
+                            <figure><img src="asset/image/menu-4.png" alt="menu-4"></figure>
+                            <h3>Frappuccino</h3>
+                        </div>
+                    </div>
+                    <div class="popularMenuBlockFive"> <!-- columnFive -->
+                        <div class="PopularMenuBoxOne"> <!-- subColumnFive -->
+                            <figure><img src="asset/image/menu-5.png" alt="menu-5"></figure>
+                            <h3>Black Coffee</h3>
+                        </div>
+                    </div>
+                    <div class="popularMenuBlockSix"> <!-- columnSix -->
+                        <div class="PopularMenuBoxOne"> <!-- subColumnSix -->
+                            <figure><img src="asset/image/menu-6.png" alt="menu-6"></figure>
+                            <h3>Love Heart Coffee</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="gallery" id="Gallery"> <!-- 2.component -->
+            <div class="galleryContainer screenSize"> <!-- 3.componentContainer -->
+                <div class="gallerBodyOne"> <!-- rowOne -->
+                    <div class="galleryBlockOne"> <!-- 5.columnone -->
+                        <div class="galleryBoxOne"> <!-- 6.subColumnOne -->
+                            <figure><img src="asset/image/heading-img.jpg" alt="heading"></figure>
+                            <h2>Our Gallery</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="galleryBodyTwo"> <!-- rowtwo -->
+                    <div class="galleryBlockOne"> <!-- columnOne -->
+                        <div class="galleryBoxone"> <!-- subColumnOne -->
+                            <figure><img src="asset/image/gallery-1.jpg" alt="gallery-1"></figure>
+                        </div>
+                    </div>
+                    <div class="galleryBlockTwo"> <!-- columntwo -->
+                        <div class="galleryBoxTwo"> <!-- subColumnTwo -->
+                            <figure><img src="asset/image/gallery-2.jpg" alt="gallery-2"></figure>
+                        </div>
+                    </div>
+                    <div class="galleryBlockThree"> <!-- columnThree -->
+                        <div class="galleryBoxThree"> <!-- subcolumnthree -->
+                            <figure><img src="asset/image/gallery-3.jpg" alt="gallery-3"></figure>
+                        </div>
+                    </div>
+                    <div class="galleryBlockFour"> <!-- columnFour -->
+                        <div class="galleryBoxFour"> <!-- subColumnFour -->
+                            <figure><img src="asset/image/gallery-4.jpg" alt="gallery-4"></figure>
+                        </div>
+                    </div>
+                    <div class="galleryBlockFive"> <!-- columnFive -->
+                        <div class="galleryBoxFive"> <!-- subColumnFive -->
+                            <figure><img src="asset/image/gallery-5.jpg" alt="gallery-5"></figure>
+                        </div>
+                    </div>
+                    <div class="galleryBlockSix"> <!-- columnSix -->
+                        <div class="galleryBoxSix"> <!-- subColumnSix -->
+                            <figure><img src="asset/image/gallery-6.jpg" alt="gallery-6"></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team" id="Team"> <!--2.component -->
+            <div class="teamContainer"> <!-- 3.componentContainer -->
+                <div class="teamBodyOne"> <!-- 4.rowOne -->
+                    <div class="teamBlock"> <!-- 5.columnOne -->
+                        <div class="teamBox"> <!-- 6.SubColumnOne -->
+                            <figure><img src="asset/image/heading-img.jpg" alt="heading"></figure>
+                            <h2>Our Team</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="teamBodyTwo"> <!-- rowTwo -->
+                    <div class="teamBlockOne"> <!-- columnOne -->
+                        <div class="teamBoxOne"> <!-- subColumnOne -->
+                            <figure><img src="asset/image/our-team-1.jpg" alt="team-1"></figure>
+                            <h3>John Deo</h3>
+                        </div>
+                    </div>
+                    <div class="teamBlockTwo"> <!-- columnTwo -->
+                        <div class="teamBoxOne"> <!-- subColumnTwo -->
+                            <figure><img src="asset/image/our-team-2.jpg" alt="team-2"></figure>
+                            <h3>John Deo</h3>
+                        </div>
+                    </div>
+                    <div class="teamBlockThree"> <!-- columnThree -->
+                        <div class="teamBoxOne"> <!-- subColumnThree -->
+                            <figure><img src="asset/image/our-team-3.jpg" alt="team-3"></figure>
+                            <h3>John Deo</h3>
+                        </div>
+                    </div>
+                    <div class="teamBlockFour"> <!-- columnFour -->
+                        <div class="teamBoxOne"> <!-- subColumnFour -->
+                            <figure><img src="asset/image/our-team-4.jpg" alt="team-4"></figure>
+                            <h3>John Deo</h3>
+                        </div>
+                    </div>
+                    <div class="teamBlockFive"> <!-- columnFive -->
+                        <div class="teamBoxOne"> <!-- subColumnFive -->
+                            <figure><img src="asset/image/our-team-5.jpg" alt="team-5"></figure>
+                            <h3>John Deo</h3>
+                        </div>
+                    </div>
+                    <div class="teamBlockSix"> <!-- columnsix -->
+                        <div class="teamBoxOne"> <!-- subcolumnSix -->
+                            <figure><img src="asset/image/our-team-6.jpg" alt="team-6"></figure>
+                            <h3>John Deo</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer> <!-- parentcontainer -->
+        <div class="contact" id="Contact"><!-- 2.component -->
+            <div class="contactContainer"><!-- 3.componentContainer -->
+                <div class="contactBodyOne"><!-- 4.row -->
+                    <div class="contactBlock"><!-- 5.column -->
+                        <div class="contactBox"><!-- 6.subColumn -->
+                            <figure>
+                                <img src="./asset/image/heading-img.jpg" alt="contactUs"><!-- 7.contentContainer -->
+                            </figure>
+                            <h2>Contact Us</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactBodyTwo grid-2"><!-- 4.row -->
+                    <div class="contactBlockOne"><!-- 5.column -->
+                        <div class="contactBoxOne"><!-- 6.subColumn -->
+                            <figure>
+                                <img src="./asset/image/contact-img (1).jpg" alt="contact"><!-- 7.contentContainer -->
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="contactBlockTwo"><!-- 5.column -->
+                        <div class="contactBoxTwo"><!-- 6.subColumn -->
+                            <div class="bookATable">
+                                <h3>Book A Table</h3>
+                                <form action="/submit" method="post">
+
+                                    <div class="formGroup">
+                                        <input type="text" id="text" placeholder="Enter Your Name">
+                                    </div>
+                                    <div class="formGroup">
+                                        <input type="number" id="number" placeholder="Enter Your Number">
+                                    </div>
+                                    <div class="formGroup">
+                                        <input type="number" id="number" placeholder="How Many Guests">
+                                    </div>
+                                    <button type="submit">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contactIcon componentSpacing"> <!-- 2.component -->
+            <div class="contactIconContainer screenSize"> <!-- 3.componentContainer -->
+                <div class="contactIconBodyOne grid-4"> <!-- 4.rowOne -->
+                    <div class="contactIconBlockOne"> <!--5.columnOne -->
+                        <div class="contactIconBoxOne"> <!-- 6.subColumnOne -->
+                            <div class="contactIconCard">
+                                <div class="contactIconCardHeader">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="contactIconCardMain">
+                                    <h3>Our Email</h3>
+                                    <p>shaakshi@gmail.com</p>
+                                    <p>hyhy@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactIconBlockTwo"> <!-- columnTwo -->
+                        <div class="contactIconBoxTwo"> <!-- subcolumnTwo -->
+                            <div class="contactIconCard">
+                                <div class="contactIconCardHeader">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div class="contactIconCardMain">
+                                    <h3>Opening Hours</h3>
+                                    <p>07:00am to 09:00pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactIconBlockThree"> <!-- columnThree -->
+                        <div class="contactIconBoxThree"> <!-- subcolumnThree -->
+                            <div class="contactIconCard">
+                                <div class="contactIconCardHeader">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="contactIconCardMain">
+                                    <h3>Shop Location</h3>
+                                    <p>mumbai, india- 400101</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactIconBlockFour"> <!-- columnFour -->
+                        <div class="contactIconBoxFour"> <!-- subColumnFour -->
+                            <div class="contactIconcard">
+                                <div class="contactIonCardHeader">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="contactIconCardMain">
+                                    <h3>Our Number</h3>
+                                    <p>+91-123-456-7890</p>
+                                    <p>+91-111-222-3333</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactIconBodyTwo"> <!-- rowTwo -->
+                    <div class="contactIconBlockOne"> <!-- columnOne -->
+                        <div class="contactIconBoxOne"> <!-- subColumnOne -->
+                            <p>© copyright @ 2022 by <span>mr. web designer</span> | all rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
